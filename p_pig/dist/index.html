@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="dongsheng,donglegend">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta id="viewport" name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="grey" />
+<meta name="format-detection" content="telephone=no;address=no;email=no"/>
+		<title>冲动是魔鬼么？</title>
+		<link rel="stylesheet" href="http://event.yeezan.com/p_pig/css/index.css" />
+	</head>
+	<body>
+		<!-- logo -->
+		<img src="http://event.yeezan.com/p_pig/images/pig-log.png" alt="" class="pigLog"/>
+		
+		<!-- loding -->
+		<div class="loding-box">
+			<p id="loadProcess"></p>
+		</div>
+		
+		<!-- 背景音乐 -->
+		<audio id="bgSound" src="http://event.yeezan.com/p_pig/images/pig.mp3" loop></audio>
+		<div class="bgSoundImg musicPlay" id="bgSoundImg"></div>
+		
+		<!-- loading -->
+		<div class="loading-box">
+			<p class="process" id="loadProcess"></p>
+		</div>		
+		
+		<!-- 提交成功 -->
+		<div class="lastPage">
+			<img src="http://event.yeezan.com/p_pig/images/lastpage.png" alt="" />
+		</div>
+		
+		<!-- swiper -->
+		<div class="swiper h" id="swiper">
+			<div class="page1 item">
+				<img src="http://event.yeezan.com/p_pig/images/page1.png" alt="" class="animated"/>
+			</div>
+			<div class="page2 item">
+				<img src="http://event.yeezan.com/p_pig/images/page2-font1.png" alt="" class="img1 animated delay0 fadeIns"/>
+				<img src="http://event.yeezan.com/p_pig/images/page2-font2.png" alt="" class="img2 animated delay1 fadeIns"/>
+				<img src="http://event.yeezan.com/p_pig/images/page2-font3.png" alt="" class="img3 animated delay2 fadeIn"/>
+			</div>
+			
+			<!-- blue -->
+			<div class="page3 item">
+				<img src="http://event.yeezan.com/p_pig/images/blue-bg.png" alt="" class="bg"/>
+				<div class="img-box">
+					<img src="http://event.yeezan.com/p_pig/images/blue.gif" alt="" data-src="http://event.yeezan.com/p_pig/images/blue.gif"/>
+					<img src="http://event.yeezan.com/p_pig/images/blue-btn.png" alt="" class="gif-btn"/>
+				</div>
+			</div>
+			
+			<!-- green -->
+			<div class="page4 item">
+				<img src="http://event.yeezan.com/p_pig/images/green-bg.png" alt="" class="bg"/>
+				<div class="img-box">
+					<img src="http://event.yeezan.com/p_pig/images/green.gif" alt="" data-src="http://event.yeezan.com/p_pig/images/green.gif"/>
+					<img src="http://event.yeezan.com/p_pig/images/green-btn.png" alt="" class="gif-btn"/>
+				</div>
+			</div>
+			
+			<!-- yellow -->
+			<div class="page5 item">
+				<img src="http://event.yeezan.com/p_pig/images/yellow-bg.png" alt="" class="bg"/>
+				<div class="img-box">
+					<img src="http://event.yeezan.com/p_pig/images/yellow.gif" alt="" data-src="http://event.yeezan.com/p_pig/images/yellow.gif"/>
+					<img src="http://event.yeezan.com/p_pig/images/yellow-btn.png" alt="" class="gif-btn"/>
+				</div>
+			</div>
+			
+			<!-- red -->
+			<div class="page6 item">
+				<img src="http://event.yeezan.com/p_pig/images/red-bg.png" alt="" class="bg"/>
+				<div class="img-box">
+					<img src="http://event.yeezan.com/p_pig/images/red.gif" alt="" data-src="http://event.yeezan.com/p_pig/images/red.gif"/>
+					<img src="http://event.yeezan.com/p_pig/images/red-btn.png" alt="" class="gif-btn"/>
+				</div>
+			</div>
+			
+			<!-- 抽奖 -->
+			<div class="page8 item" id="luckStage">
+				<ul class="img-box clearfix">
+					<li class="bg img0 blue luck-cell luck-0" data-index="0"><div class="mask"></div></li>
+					<li class="bg img1 blue luck-cell luck-1" data-index="1"><div class="mask"></div></li>
+					<li class="bg img2 blue luck-cell luck-2" data-index="2"><div class="mask"></div></li>
+					<li class="bg img7 blue luck-cell luck-7" data-index="7"><div class="mask"></div></li>
+					<li class="imgs"></li>
+					<li class="bg img3 blue luck-cell luck-3" data-index="3"><div class="mask"></div></li>
+					<li class="bg img6 blue luck-cell luck-6" data-index="6"><div class="mask"></div></li>
+					<li class="bg img5 blue luck-cell luck-5" data-index="5"><div class="mask"></div></li>
+					<li class="bg img4 blue luck-cell luck-4" data-index="4"><div class="mask"></div></li>
+				</ul>
+				<div class="selset-box">
+					<img src="http://event.yeezan.com/p_pig/images/select-title.png" alt="" class="selectTitle"/>
+					<div class="selectBtn">
+						<img src="http://event.yeezan.com/p_pig/images/select-blue.png" class="selectImg" data-color="blue" alt="" />
+						<img src="http://event.yeezan.com/p_pig/images/select-green.png" class="selectImg" data-color="green" alt="" />
+						<img src="http://event.yeezan.com/p_pig/images/select-yellow.png" class="selectImg" data-color="yellow" alt="" />
+						<img src="http://event.yeezan.com/p_pig/images/select-white.png" class="selectImg" data-color="white" alt="" />
+						<img src="http://event.yeezan.com/p_pig/images/select-red.png" class="selectImg" data-color="red" alt="" />
+					</div>
+				</div>
+			</div>
+			
+			<!-- city -->
+			<div class="page9 item">
+				<img src="http://event.yeezan.com/p_pig/images/blue/1/city.png" alt="" />
+				<p class="placeName"></p>
+			</div>
+			
+			<!-- 轮播 -->
+			<div class="page10 item ">
+				<div class="swiper-container">
+					<div class="swiper-wrapper clearfix">
+						<div class="swiper-slide"><img src="http://event.yeezan.com/p_pig/images/blue/1/0.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="http://event.yeezan.com/p_pig/images/blue/1/1.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="http://event.yeezan.com/p_pig/images/blue/1/2.jpg" alt="" /></div>
+					</div>
+				</div>
+				<p class="city-font"></p>
+				<div class="btn1 btn">一键报名</div>
+				<div class="btn2 btn">重新选择</div>
+			</div>
+			
+			<!-- form -->
+			<div class="page11 item">
+				<p class="title1">报名【2017小猪体验师】</p>
+				<div class="input-box clearfix">
+					<span class="left">姓名：</span>
+					<input type="text" name="" id="userName"/>
+				</div>
+				<div class="input-box clearfix">
+					<span class="left">电话：</span>
+					<input type="tel" name="" id="userPhone"/>
+				</div>
+				<div class="btn" id="btnSub">提交</div>
+				
+				<p class="title2">参与规则：</p>
+				<p>1.资格标准：凡年满18周岁以上报名者均有参与资格，报名截止至2016年12月31日。不同房源可重复报名，但报名者仅可获得1次活动权益。</p>
+				<p>2.获得规则：每个活动房源的第188名报名者成为该房源的【小猪体验师】并获得对应的体验权益。</p>
+				<p>3.权益内容：报名房源两天两夜的免费住宿权，权益截止至2017年12月31日。</p>
+				<p>4.发放形式：活动结束，小猪会在微信订阅号（昵称：小猪短租，微信号：xiaozhunite）公布入选结果，2天2夜住宿权将以代金券形式充值到入选体验师报名手机号。①代金券为直减券，金额为所选房源在本活动发起时的定价，入住时若房源价格变动（如调高），差价部分由体验师承担。②用报名手机号注册小猪账户后，可在个人中心查看代金券详情。③体验时如发现所选房源已下线，可在微信订阅号后台转达小猪做相应更换。</p>
+				<p>5.本次活动最终解释权归小猪所有。</p>
+			</div>
+		</div>
+		<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?5bbe48e38a7000c72918e4a50805dc77";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="http://event.yeezan.com/p_pig/js/min/main.js?158f6abc850"></script>
+		
+	</body>
+</html>

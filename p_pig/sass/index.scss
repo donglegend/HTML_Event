@@ -1,0 +1,497 @@
+@import "../../style/reset";
+@import "../../style/animate";
+@import "../../style/mixins";
+@import "../../style/swiper";
+@import "../../style/media";
+@import "./font";
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    color:#666;
+}
+body{
+    background: url(../images/bg.gif) no-repeat;
+    background-size: cover;
+}
+
+.bgSoundImg{
+    position: fixed;
+    right:5px;
+    top:5px;
+    width:20px;
+    height:20px;
+    background: url(../images/music.png) no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+.musicPlay{
+    animation: reverseRotataZ 2s linear infinite
+}
+@keyframes reverseRotataZ {
+    0% {
+        -webkit-transform: rotateZ(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotateZ(-360deg)
+    }
+}
+
+.page1{
+    box-sizing: border-box;
+    text-align: center;
+    img{
+        display: block;
+        width:80%;
+        margin: 40% auto 0;
+    }
+}
+
+.page2{
+    text-align: center;
+    position: relative;
+    img{
+        width:80%;
+        position: absolute;
+        top:45%;
+        left:50%;
+        @include transform(translateY(-50%) translateX(-50%));
+         -webkit-animation-duration: 3.5s;
+         animation-duration: 3.5s;
+    }
+    .delay0{
+        animation-delay: 0s;
+    }
+    .delay1{
+        animation-delay: 3.5s;
+    }
+    .delay2{
+        animation-delay: 7s;
+    }
+}
+
+.page3,.page4,.page5,.page6{
+    position: relative;
+   .bg{
+       position: absolute;
+       width:100%;
+       height:100%;
+   }
+   .img-box{
+       box-sizing: border-box;
+       position: absolute;
+       width:80%;
+       height:90%;
+       top:50%;
+       left:50%;
+       padding-top:10%;
+       @include transform(translateY(-50%) translateX(-50%));
+       img{
+           width:100%;
+       }
+   }
+}
+
+.page8{
+    position: relative;
+    .img-box{
+        box-sizing: border-box;
+        width:100%;
+        margin-top:5%;
+        padding:0 1rem;
+        text-align: center;
+        .bg{
+            position: relative;
+            box-sizing: border-box;
+            display: inline-block;
+            width:5rem;
+            height:5rem;
+            border:3px solid #fff;
+            margin:0.5rem;
+            @include border-radius(5px);
+            background-size: 400%;
+            background-repeat: no-repeat;
+        }
+        .imgs{
+            box-sizing: border-box;
+            display: inline-block;
+            width:5rem;
+            height:5rem;
+            margin:0.5rem;
+            background: url(../images/page1.png) center center no-repeat;
+            background-size: contain;
+        }
+        .red{
+            background-image: url(../images/red-s.png);
+        }
+        .blue{
+            background-image: url(../images/blue-s.png);
+        }
+        .green{
+            background-image: url(../images/green-s.png);
+        }
+        .white{
+            background-image: url(../images/white-s.png);
+        }
+        .yellow{
+            background-image: url(../images/yellow-s.png);
+        }
+        
+        .img0{
+            background-position: 0 -0;
+        }
+        .img1{
+            background-position: 33.333333% 0;
+        }
+        .img2{
+            background-position: 66.666666% 0;
+        }
+        .img3{
+            background-position: 100% 0;
+        }
+        .img4{
+            background-position: 0 100%;
+        }
+        .img5{
+            background-position: 33.333333% 100%;
+        }
+        .img6{
+            background-position: 66.666666% 100%;
+        }
+        .img7{
+            background-position: 100% 100%;
+        }
+        .mask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, .8);
+        }
+        .luckActive{
+            .mask{
+                background: rgba(0, 0, 0, 0);
+            }
+        }
+    }
+    .selset-box{
+        text-align: center;
+        .selectTitle{
+            width:60%;
+            margin:10% 0 5%;
+        }
+        .selectBtn{
+            text-align: center;
+            font-size: 0;
+            img{
+                width:10%;
+                margin:0 3%;
+            }
+        }
+    }
+}
+
+.page9{
+    width:100%;
+    background: url(../images/city-bg.png) no-repeat;
+    background-size: cover;
+    img{
+        display: block;
+        width:80%;
+        margin:15% auto 0;
+    }
+    .placeName{
+        box-sizing: border-box;
+        padding-right:11%;
+        width:100%;
+        position: absolute;
+        top:39%;
+        text-align: right;
+        color:#999;
+        font-size: 0.8rem;
+    }
+}
+.page10{
+    overflow: hidden;
+    background: url(../images/city-bg.png) no-repeat;
+    background-size: cover;
+    .swiper-container{
+        width:80%;
+        margin: 15% auto 0;
+        box-shadow: 0px 0px 10px #666;
+        overflow: hidden;
+        font-size: 0;
+    }
+
+    .swiper-wrapper{
+        height: auto !important;
+        font-size: 0;
+    }
+    .swiper-slide{
+        height: auto !important;
+        img{
+            width:100%;
+        }
+    }
+    .city-font{
+        box-sizing: border-box;
+        font-size: 0.9rem;
+        padding:0 2rem;
+        line-height: 1.5rem;
+        text-align: center;
+        margin-top:2rem;
+    }
+    .btn{
+        margin:2rem auto 0;
+        width:30%;
+        color:#fff;
+        background: #f36a7e;
+        border-radius: 100px/100px;
+        padding:0.8rem 1rem 0.5rem;
+        text-align: center;
+    }
+    .btn2{
+        margin-top:2rem;
+    }
+}
+
+.page11{
+    text-align: center;
+    box-sizing: border-box;
+    padding:1.5rem;
+    background: url(../images/city-bg.png) no-repeat;
+    background-size: cover;
+    .input-box{
+        margin:1rem 0;
+        .left{
+            float:left;
+            width:20%;
+            line-height: 2rem;
+        }
+        input{
+            box-sizing: border-box;
+            float:left;
+            width:80%;
+            height:2rem;
+            background: none;
+            border:1px solid #666;
+            @include border-radius(4px);
+            padding:0 1rem;
+            outline: none;
+        }
+        .warn{
+            border:2px solid orangered;
+        }
+    }
+    p{
+        text-align: left;
+        line-height:1.1rem;
+        font-size: 0.8rem;
+    }
+    .title1{
+        margin-bottom:1rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .title2{
+        font-size: 1rem;
+    }
+    .btn{
+        margin:1rem auto;
+        width:30%;
+        color:#fff;
+        background: #f36a7e;
+        border-radius: 100px/100px;
+        padding:0.8rem 1rem 0.5rem;
+        text-align: center;
+    }
+}
+
+.fixed{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 1;
+}
+
+.pigLog{
+    position: fixed;
+    bottom:1rem;
+    left:50%;
+    right:1rem;
+    width:15%;
+    @include transform(translateX(-50%));
+    z-index: 1;
+}
+.pigLogBottom{
+    bottom:0.2rem;
+}
+.pigLogRight{
+    left: auto;
+    right:0.5rem;
+}
+.loding-box{
+    position: fixed;
+    width:100%;
+    height:100%;
+    background: #666;
+    z-index: 2;
+    #loadProcess{
+        position: absolute;
+        top:50%;
+        left:50%;
+        @include transform(translateY(-50%) translateX(-50%));
+        width:100%;
+        color:#fff;
+        text-align: center;
+    }
+}
+
+.lastPage{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: url(../images/bg.gif) no-repeat;
+    background-size: cover;
+    z-index: 3;
+    text-align: center;
+    display: none;
+    img{
+        width:90%;
+        margin-top:40%;
+    }
+}
+
+.gif-btn{
+    margin-top:2rem;
+}
+
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Copyright 2012-2013, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+
+/* ===============================================================
+Basic Swiper Styles 
+================================================================*/
+.swiper-container {
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    backface-visibility:hidden;
+    /* Fix of Webkit flickering */
+    z-index:1;
+}
+.swiper-wrapper{
+    height:auto !important;
+}
+.swiper-wrapper {
+    position:relative;
+    width:100%;
+    -webkit-transition-property:-webkit-transform, left, top;
+    -webkit-transition-duration:0s;
+    -webkit-transform:translate3d(0px,0,0);
+    -webkit-transition-timing-function:ease;
+    
+    -moz-transition-property:-moz-transform, left, top;
+    -moz-transition-duration:0s;
+    -moz-transform:translate3d(0px,0,0);
+    -moz-transition-timing-function:ease;
+    
+    -o-transition-property:-o-transform, left, top;
+    -o-transition-duration:0s;
+    -o-transform:translate3d(0px,0,0);
+    -o-transition-timing-function:ease;
+    -o-transform:translate(0px,0px);
+    
+    -ms-transition-property:-ms-transform, left, top;
+    -ms-transition-duration:0s;
+    -ms-transform:translate3d(0px,0,0);
+    -ms-transition-timing-function:ease;
+    
+    transition-property:transform, left, top;
+    transition-duration:0s;
+    transform:translate3d(0px,0,0);
+    transition-timing-function:ease;
+}
+.swiper-free-mode > .swiper-wrapper {
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    margin: 0 auto;
+}
+.swiper-slide {
+    float: left;
+    height: auto !important;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+    -ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+    -ms-touch-action: pan-x;
+}
+
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+.swiper-container {
+    /* Specify Swiper's Size: */
+
+    /*width:200px;
+    height: 100px;*/
+}
+.swiper-slide {
+    /* Specify Slides's Size: */
+    
+    /*width: 100%;
+    height: 100%;*/
+}
+.swiper-slide-active {
+    /* Specific active slide styling: */
+    
+}
+.swiper-slide-visible {
+    /* Specific visible slide styling: */   
+
+}
+/* ===============================================================
+Pagination Styles
+================================================================*/
+.swiper-pagination-switch {
+    /* Stylize pagination button: */    
+
+}
+.swiper-active-switch {
+    /* Specific active button style: */ 
+    
+}
+.swiper-visible-switch {
+    /* Specific visible button style: */    
+    
+}

@@ -1,0 +1,91 @@
+{
+    "error": "0",
+    "msg": "success",
+    "data": [
+        {
+            "id": 1,
+            "openid": "testaaaa",
+            "username": "张三",
+            "avatar": "",
+            "qrcode": "",
+            "shidian_gift_money": "0.0000",
+            "yeezan_gift_money": "0.0000",
+            "choose_time_start": "0000-00-00 00:00:00",
+            "choose_time_end": "0000-00-00 00:00:00",
+            "is_shidian_gift": 1,
+            "is_yeezan_gift": 1,
+            "create_time": "0000-00-00 00:00:00"
+        },
+        {
+            "id": 1,
+            "openid": "testaaaa",
+            "username": "李四",
+            "avatar": "",
+            "qrcode": "",
+            "shidian_gift_money": "0.0000",
+            "yeezan_gift_money": "0.0000",
+            "choose_time_start": "0000-00-00 00:00:00",
+            "choose_time_end": "0000-00-00 00:00:00",
+            "is_shidian_gift": 1,
+            "is_yeezan_gift": 1,
+            "create_time": "0000-00-00 00:00:00"
+        },
+        {
+            "id": 1,
+            "openid": "testaaaa",
+            "username": "王五",
+            "avatar": "",
+            "qrcode": "",
+            "shidian_gift_money": "0.0000",
+            "yeezan_gift_money": "0.0000",
+            "choose_time_start": "0000-00-00 00:00:00",
+            "choose_time_end": "0000-00-00 00:00:00",
+            "is_shidian_gift": 1,
+            "is_yeezan_gift": 1,
+            "create_time": "0000-00-00 00:00:00"
+        },
+        {
+            "id": 1,
+            "openid": "testaaaa",
+            "username": "王五",
+            "avatar": "",
+            "qrcode": "",
+            "shidian_gift_money": "0.0000",
+            "yeezan_gift_money": "0.0000",
+            "choose_time_start": "0000-00-00 00:00:00",
+            "choose_time_end": "0000-00-00 00:00:00",
+            "is_shidian_gift": 1,
+            "is_yeezan_gift": 1,
+            "create_time": "0000-00-00 00:00:00"
+        },
+        {
+            "id": 1,
+            "openid": "testaaaa",
+            "username": "王五",
+            "avatar": "",
+            "qrcode": "",
+            "shidian_gift_money": "0.0000",
+            "yeezan_gift_money": "0.0000",
+            "choose_time_start": "0000-00-00 00:00:00",
+            "choose_time_end": "0000-00-00 00:00:00",
+            "is_shidian_gift": 1,
+            "is_yeezan_gift": 1,
+            "create_time": "0000-00-00 00:00:00"
+        },
+        {
+            "id": 1,
+            "openid": "testaaaa",
+            "username": "王五",
+            "avatar": "",
+            "qrcode": "",
+            "shidian_gift_money": "0.0000",
+            "yeezan_gift_money": "0.0000",
+            "choose_time_start": "0000-00-00 00:00:00",
+            "choose_time_end": "0000-00-00 00:00:00",
+            "is_shidian_gift": 1,
+            "is_yeezan_gift": 1,
+            "create_time": "0000-00-00 00:00:00"
+        }
+    ],
+    "code": ""
+}

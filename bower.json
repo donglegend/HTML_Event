@@ -1,0 +1,31 @@
+{
+  "name": "yizanH5",
+  "version": "0.0.0",
+  "authors": [
+    "dongsheng"
+  ],
+  "description": "易赞活动h5",
+  "keywords": [
+    "h5"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.5.2",
+    "artTemplate": "~3.0.1",
+    "exif-js": "~2.1.1",
+    "fastclick": "^1.0.6",
+    "iswiper": "wechatui/swiper#~1.4.1",
+    "jquery": "~2.2.0",
+    "mySwiper": "~1.0.2",
+    "urijs": "uri.js#~1.18.1",
+    "zepto": "~1.1.6"
+  }
+}

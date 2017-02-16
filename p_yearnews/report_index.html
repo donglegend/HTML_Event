@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--#include file="commonDom/meta.html" -->
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <canvas id="html5_3d_animation">Internet Explorer Not
+    Supported</canvas>
+
+    <div class="loading" id="loadingBox">
+        <img src="images/load.png">
+        <p class="t"></p>
+    </div>
+
+    <div class="wrap" style="display: none;">
+        <div class="swiper">
+            <div class="item page1">
+                <div class="middle">
+                    <div class="textBox animated bounceInRight" id="p1Text">
+                    </div>
+                    <div class="imgBox imgBox1 animated fadeInRight delay1">
+                        <img src="images/p1_1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="item page2">
+                <div class="middle">
+                    <div class="textBox animated bounceInRight" id="p2Text">
+                    </div>
+                    <div class="imgBox imgBox2 animated zoomInRight delay1">
+                        <img src="images/p2_1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="item page3">
+                <div class="middle">
+                    <div class="textBox animated bounceInRight" id="p3Text">
+                    </div>
+                    <div class="imgBox imgBox3 animated zoomInUp delay1">
+                        <img src="images/p3_1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="item page4">
+                <div class="middle">
+                    <div class="textBox animated bounceInRight" id="p4Text">
+                    </div>
+                    <div class="imgBox">
+                        <ul class="mothlist clearfix">
+                            <li class="animated slideInUp"></li>
+                            <li class="animated slideInUp"></li>
+                            <li class="animated slideInUp"></li>
+                            <li class="animated slideInUp"></li>
+                            <li class="animated slideInUp"></li>
+                            <li class="animated slideInUp"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item page5">
+                <div class="middle">
+                    <div class="textBox animated bounceInRight" id="p5Text">
+                    </div>
+                    <div class="imgBox animated zoomIn delay1" id="mapArea">
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="item page6">
+                <div class="middle">
+                    <div class="textBox animated bounceInRight">
+                        <p><b class="hl">2016</b>年过去了，</p>
+                        <p>我们很想念她......</p>
+                        <p style="margin-top: 1rem;"><b class="hl">2017</b>年，</p>
+                        <p>易赞会继续陪您走得更远......</p>
+                    </div>
+                    <div class="btns animated fadeInUp delay1">
+                        <div class="btn" id="btnReview">重新浏览</div>
+                        <a href="/mobile/event/reportList">
+                            <div class="btn">返回列表</div>
+                        </a>
+                    </div>
+                    <div class="code animated fadeInUp delay2">
+                        <img src="images/code.png">
+                    </div>
+                </div>
+                <footer class="footer text-center">
+                    <a href="http://www.yeezan.com/mobile/user/mine">
+                        <img src="images/footerlogo.png" alt="yeezan.com">
+                    </a>
+                </footer>
+            </div>
+        </div>
+
+        <div class="arrow" id="arrow">
+            <img src="images/arrow.png" class="animated fadeInUp infinite">
+        </div>
+    </div>
+
+
+    
+
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="build/index.js"></script>
+    <!--#include file="commonDom/pv.html" -->
+    <script type="text/html" id="tem_p1">
+        <p><b class="hl">2016</b>年，</p>
+        <p>此公众号共发布了<b class="hl">{{total_article}}</b>篇文章，</p>
+        <p>累计阅读<b class="hl">{{total_readnum}}</b>次，</p>
+        {{if +read_type == 1}}
+        <p>相当于每个中国人阅读过<b class="hl">{{person}}</b>次。</p>
+        {{else}}
+        <p>相当于每<b class="hl">{{person}}</b>个中国人就有<b class="hl">1</b>个阅读过您的文章。</p>
+        {{/if}}
+    </script>
+    <script type="text/html" id="tem_p2">
+        <p>这一年，</p>
+        <p>发布的文章共经历了<b class="hl">{{total_collect}}</b>次收藏，</p>
+        <p><b class="hl">{{total_share}}</b>次分享。</p>
+    </script>
+    <script type="text/html" id="tem_p3">
+        <p>其中，</p>
+        <p><b class="hl">{{publish_date}}</b>发布的</p>
+        <p><b class="hl">《{{title.length > 25 ? title.substr(0, 25) + "..." : title}}》</b></p>
+        <p>累计阅读<b class="hl">{{readnum}}</b>次，</p>
+        <p>累计分享<b class="hl">{{share}}</b>次，</p>
+        <p>成为<b class="hl">2016</b>年传播最广，最受欢迎的文章。</p>
+    </script>
+    <script type="text/html" id="tem_p4">
+        <p>这一年，</p>
+        <p>粉丝数在<b class="hl">{{fans_increase_month}}</b>月增长最为迅猛！</p>
+        <p>当前粉丝数超越了<b class="hl">{{fans_beyond_percent}}%</b>的自媒体同行。</p>
+    </script>
+    <script type="text/html" id="tem_p5">
+        <p><b class="hl">粉丝们都在这些地方默默支持着你</b></p>
+        <ul class="maplist">
+            {{each fans_province_distribution as v i}} {{if i
+            < 3}} <li>{{v.province}} {{v.percent}}%</li>
+                {{/if}} {{/each}}
+        </ul>
+    </script>
+</body>
+
+</html>

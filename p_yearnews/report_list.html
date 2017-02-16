@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--#include file="commonDom/meta.html" -->
+    <title>公众号年度报告</title>
+    <link rel="stylesheet" type="text/css" href="css/list.css">
+</head>
+
+<body>
+    <div class="wrap" id="box">
+
+        <!-- <div class="middle" style="display: none;">
+            <div class="title text-center">
+                <h2>感谢您陪伴易赞的<b class="time" id="time"></b>天</h2>
+                <h2>我们为您准备了一份特殊的礼物</h2>
+                <p>点击「查看报告」按钮即可查看该公众号的年度报告</p>
+            </div>
+            <ul class="one text-center">
+                <li>
+                    <img class="avatar" src="" alt="">
+                    <h2 class="name">十点读书</h2>
+                    <p class="text">读好书每晚十点读书</p>
+                    <a href="">
+                        <p class="btn">查看报告</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+ -->
+        <!-- <div>
+            <div class="title text-center">
+                <h2>感谢您陪伴易赞的<b class="time" id="time"></b>天</h2>
+                <h2>我们为您准备了一份特殊的礼物</h2>
+                <p>点击「查看报告」按钮即可查看该公众号的年度报告</p>
+            </div>
+            <div class="two">
+                <div class="valid list">
+                    <h2 class="title">可用公众号</h2>
+                    <ul>
+                        <li class="clearfix">
+                            <img class="avatar" src="" alt="">
+                            <h2 class="name">十点读书</h2>
+                            <p class="text">读好书每晚十点读书</p>
+                            <a href="">
+		                        <p class="btn">查看报告</p>
+		                    </a>
+                        </li>
+                        <li class="clearfix">
+                            <img class="avatar" src="" alt="">
+                            <h2 class="name">十点读书</h2>
+                            <p class="text">读好书每晚十点读书</p>
+                            <a href="">
+		                        <p class="btn">查看报告</p>
+		                    </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="invalid list">
+                    <h2 class="title">不可用公众号 <small> 未授权、微信未认证等因素无法生成报告</small></h2>
+                    <ul>
+                        <li class="clearfix">
+                            <img class="avatar" src="" alt="">
+                            <h2 class="name">十点读书</h2>
+                            <p class="text">读好书每晚十点读书</p>
+                        </li>
+                        <li class="clearfix">
+                            <img class="avatar" src="" alt="">
+                            <h2 class="name">十点读书</h2>
+                            <p class="text">读好书每晚十点读书</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+    <!--#include file="commonDom/pv.html" -->
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="build/list.js"></script>
+    <script type="text/html" id="temone">
+
+        <div class="middle">
+            <div class="title text-center">
+                <h2>感谢您陪伴易赞的<b class="time" id="time">{{days}}</b>天</h2>
+                <h2>我们为您准备了一份特殊的礼物</h2>
+                <p>点击「查看报告」按钮即可查看该公众号的年度报告</p>
+            </div>
+            <ul class="one text-center">
+                {{each available as v i}}
+                <li>
+                    <img class="avatar" src="{{v.mp_avatar}}" alt="{{v.mp_name}}">
+                    <h2 class="name">{{v.mp_name}}</h2>
+                    <p class="text">{{v.mp_recommend && v.mp_recommend.length > 15 ? v.mp_recommend.substr(0, 15) + '...' : v.mp_recommend}}</p>
+                    <a href="/mobile/event/reportData?mp_weixin_id={{v.mp_weixin_id}}&mp_name={{v.mp_name}}">
+                        <p class="btn">查看报告</p>
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+
+    </script>
+
+    <script type="text/html" id="temtwo">
+
+        <div>
+            <div class="title text-center">
+                <h2>感谢您陪伴易赞的<b class="time" id="time">{{days}}</b>天</h2>
+                <h2>我们为您准备了一份特殊的礼物</h2>
+                <p>点击「查看报告」按钮即可查看该公众号的年度报告</p>
+            </div>
+            <div class="two">
+                <div class="valid list">
+                    <h2 class="title">可用公众号</h2>
+                    <ul>
+                        {{each available as v i}}
+                        <li class="clearfix">
+                            <img class="avatar" src="{{v.mp_avatar}}" alt="{{v.mp_name}}">
+                            <h2 class="name">{{v.mp_name}}</h2>
+                            <p class="text">{{v.mp_recommend && v.mp_recommend.length > 8 ? v.mp_recommend.substr(0, 8) + '...' : v.mp_recommend}}</p>
+                            <a href="/mobile/event/reportData?mp_weixin_id={{v.mp_weixin_id}}&mp_name={{v.mp_name}}">
+                                <p class="btn">查看报告</p>
+                            </a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                {{if unavailable.length > 0}}
+                <div class="invalid list">
+                    <h2 class="title">不可用公众号 <small> 未授权、微信未认证等因素无法生成报告</small></h2>
+                    <ul>
+                        {{each unavailable as v i}}
+                        <li class="clearfix">
+                            <img class="avatar" src="{{v.mp_avatar}}" alt="{{v.mp_name}}">
+                            <h2 class="name">{{v.mp_name}}</h2>
+                            <p class="text">{{v.mp_recommend && v.mp_recommend.length > 8 ? v.mp_recommend.substr(0, 8) + '...' : v.mp_recommend}}</p>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--#include file="commonDom/meta.html" -->
+	<title>易赞有约</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!--#include file="commonJs/setviewport.js" -->
+
+</head>
+<body>
+
+<audio id="bgSound" src="images/bgSound.mp3" autoplay="autoplay" loop></audio>
+<div class="bgSoundImg musicPlay" id="bgSoundImg"></div>
+
+<div class="stage" id="stage">
+	
+	<div class="page stars" id="starts"></div>
+
+	<div class="page page0 animated" id="loadingBox">
+		<div class="middle">
+			<div class="logo animated infinite pulse"></div>
+			<div class="text">loading...0%</div>
+		</div>
+	</div>
+
+
+	<div class="page page1">
+		<div class="middle">
+			<div class="title animated slideInDown"></div>
+			<div class="logo animated zoomIn delay1"></div>
+			<div class="name animated fadeInUp delay2">
+				<h2 class="who" id="who"></h2>
+			</div>
+		</div>
+		<div class="lock slideShine"> &gt;滑动来解锁</div>
+	</div>
+
+
+	<div class="page page2 animated">
+		<div class="middle">
+			<div class="text">
+				<p class="animated fadeInUp">您的小伙伴易赞君驾到</p>
+				<p class="animated fadeInUp delay1">这一次我想模仿一下Siri</p>
+				<p class="animated fadeInUp delay2">吼吼 ^_^</p>
+			</div>
+			<div class="logo animated duration1 rollIn delay3" id="nextBtn"></div>
+		</div>
+	</div>
+
+	<div class="page page3 animated">
+		<div class="middle">
+			<!-- 
+			<div class="infoBox animated fadeIn">
+				<div class="info">
+					<span class="dot"></span>
+					<div class="line animated fadeIn delay1"></div>
+					<p class="text animated zoomIn">2015年6月<br/>易赞诞生了</p>
+				</div>
+				<div class="info">
+					<span class="dot"></span>
+					<div class="line animated fadeIn delay3"></div>
+					<p class="text animated zoomIn delay2">
+						2016年我新认识了10000多位好友<br/>
+						自媒体公众账号已达到10000多枚，<br/>
+						影响10亿以上粉丝，收获了品牌朋<br/>
+						友的258个赞，有朋友真好！
+					</p>
+				</div>
+				<div class="info">
+					<span class="dot"></span>
+					<div class="line animated fadeIn delay4"></div>
+					<p class="text animated zoomIn delay4">
+						我在社会化媒体<br/>
+						大数据精准营销<br/>
+						之路上走出了至<br/>
+						关重要的一步
+					</p>
+				</div>
+			</div>
+			-->
+
+			<div class="infoBox animated spinrotateIn">
+				<div class="dot dot1 ball-scale-multiple">
+					<div></div>
+					<div></div>
+					<div></div>
+			    </div>
+			    <div class="dot dot2 ball-scale-multiple">
+					<div></div>
+					<div></div>
+					<div></div>
+			    </div>
+			    <div class="dot dot3 ball-scale-multiple">
+					<div></div>
+					<div></div>
+					<div></div>
+			    </div>
+			    <div class="dot dot4 ball-scale-multiple">
+					<div></div>
+					<div></div>
+					<div></div>
+			    </div>
+
+			    <div class="text text1 animated zoomIn delay1">
+			    	<h2>2015.09</h2>
+			    	<p>赞赏上线</p>
+			    </div>
+			    <div class="text text2 animated zoomIn delay2">
+			    	<h2>2016.05</h2>
+			    	<p>易赞自媒体公众</p>
+					<p>账号入驻已达10000</p>
+					<p>多个，影响10亿以上粉丝</p>
+			    </div>
+			    <div class="text text3 animated zoomIn delay3">
+			    	<h2>目前</h2>
+			    	<p>已与100多</p>
+			    	<p>个品牌达成合作</p>
+			    </div>
+			    <div class="text text4 animated zoomIn delay4">
+			    	<h2>今天...</h2>
+			    </div>
+			</div>
+
+			<div class="textinfo animated fadeIn delay5">
+				全新２.０版即将为你带来改变<br/>按住话筒说声“生日快乐
+			</div>
+			<div class="question" style="display: none;">
+				<h2 class="animated bounceInLeft">您可以这样问我</h2>
+				<p class="animated bounceInLeft delay1">一周年有哪些活动</p>
+			</div>
+		</div>
+		<div class="box animated fadeIn delay6">
+			<div class="bo" id="voicebo"></div>
+			<div class="btn animated infinite">
+				<div class="voice">
+					<div class="ring animated infinite spin"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page page4 animated">
+		<div class="middle">
+			<h2 class="title animated bounceInLeft">“一周年有哪些活动”</h2>
+			<ul>
+				<li class="animated bounceInUp delay1 head">
+					<h2>4个结果</h2>
+					<p>获得</p>
+				</li>
+				<li class="animated bounceInUp delay2">
+					<h2>科技+</h2>
+					<p><span class="time">14:05—14:35</span> 易赞全新２.０版正式发布</p>
+				</li>
+				<li class="animated bounceInUp delay3">
+					<h2>智慧+</h2>
+					<p><span class="time">14:35—15:15</span> 李叫兽&蛟子与你面对面分享</p>
+				</li>
+				<li class="animated bounceInUp delay4">
+					<h2>大咖+</h2>
+					<p><span class="time">15:15—16:00</span> 你最关注的就在圆桌话题</p>
+				</li>
+				<li class="animated bounceInUp delay5">
+					<h2>庆生+</h2>
+					<p><span class="time">16:00－16:20</span> 这个内容你可以大胆想像</p>
+				</li>
+				<li class="animated bounceInUp delay6 end">
+					<!-- <h2>&nbsp;</h2> -->
+					<p><span class="time">16:30</span> 发布会活动结束</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="page page5 animated">
+		<dvi class="middle">
+			<div class="text animated fadeInUp">
+				<p>尊敬的各位伙伴</p>
+				<p>感谢您对易赞一直以来的支持与厚爱！</p>
+				<p>我们诚挚的邀请您出席</p>
+			</div>
+			<div class="title animated fadeInUp delay1"></div>
+			<div class="time animated fadeInUp delay2"></div>
+			<div class="code animated fadeInUp delay3"></div>
+			<div class="btn-share animated fadeInUp delay4"></div>
+		</dvi>
+	</div>
+
+	<div class="yeezanlogo"></div>
+
+	<footer class="guideTop z-move"></footer>
+
+	<div class="page share" id="sharepage"></div>
+	
+</div>
+
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="build/main.js"></script>
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?5bbe48e38a7000c72918e4a50805dc77";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--#include file="commonDom/meta.html" -->
+		<title>让爱易读</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<!-- 信封部分 -->		
+		<div class="box">
+			<!-- 背景图 -->
+			<img src="images/box-bg.png" alt="" class="boximg"/>
+			
+			<!-- 未中奖用户 -->
+			<div class="border-img-box" style="display: ;">
+				<p class="l-font">亲爱的<span>{{昵称}}</span>君</p>
+				<p class="s-font">很遗憾</p>
+				<p class="s-font">您竞猜的时间段为<span>{{竞猜时间段}}</span></p>
+				<p class="s-font">十点读书破千万用户的时间段为<span>{{粉丝破千万时间段}}</span></p>
+				<p class="s-font">十分感谢您参与此次让爱易读的公益活动，感谢您的善心和陪伴。</p>
+			</div>
+			
+			<!-- 表单 -->
+			<form class="input-box" style="display: none;">
+				<p>请完善以下信息</p>
+				<p class="mb">我们将火速将奖品送上</p>
+				<div class="input-son-box clearfix">
+					<span class="left">姓名：</span>
+					<input type="text" name="u_name"/>
+				</div>
+				<div class="input-son-box clearfix">
+					<span class="left">手机：</span>
+					<input type="text" name="u_phone"/>
+				</div>
+				<div class="input-son-box clearfix">
+					<span class="left">地址：</span>
+					<textarea name="u_address" rows="" cols=""></textarea>
+				</div>
+				<div class="btn" id="btnSub">确认提交</div>
+				<p class="tip">信息提交后将无法更改</p>
+			</form>
+			
+			<!-- 未参与 -->
+			<img src="images/no-visit.png" alt="" class="no-visite" style="display: none;"/>
+			
+			<!-- 已过期、未过期、已领取 -->
+			<div class="no-data" style="display: none;">
+				<img src="images/no-data.png" alt=""/>
+				
+				<!-- 过期未领取 -->
+				<div class="btn" style="display: none;">
+					<img src="images/btn-gray.png" alt="" />
+				</div>
+				
+				<!-- 点击领取 -->
+				<div class="get-gift" id="btn">点击领取</div>
+				
+				<!-- 已领取 -->
+				<div class="get-gift" style="display: none;">已领取</div>
+				
+			</div>
+			
+		</div>
+		
+		<!-- 中奖名单 -->
+		<div class="bottom-box">
+			<p class="t">以下为本次活动中奖名单：</p>
+			<ul class="clearfix">
+				<li>
+					<img src="http://wx.qlogo.cn/mmopen/zTnQsO5dDXd9Z12fyMWabvdRewVfKpOep0zwEVkNMsWicOSS4tLghLCpFaibKwrCWAJCQEAoLl9dFVqoBRicHEXh1RmrPpicze0c/0" alt="" class="mp-avart"/>
+					<p class="mp-name">杨子</p>
+				</li>
+				<li>
+					<img src="http://wx.qlogo.cn/mmopen/zTnQsO5dDXd9Z12fyMWaboQdTH6LZSt2CSsk3artwJict9V8lmqyibORNiaQdvEyRRMnnEfDVjb40GCfJaejYULsicJUrnsOUxlK/0" alt="" class="mp-avart"/>
+					<p class="mp-name">Виктория花薇</p>
+				</li>
+				<li>
+					<img src="http://wx.qlogo.cn/mmopen/zTnQsO5dDXd9Z12fyMWabpBlE1usU84Rk0rjDsIZYujc7iaYvDxVft1cUWv8FtWGek8ibqdDxn9L1GExibruc6vXtzsZbCiaD9sJ/0" alt="" class="mp-avart"/>
+					<p class="mp-name">Another丶Start</p>
+				</li>
+				<li>
+					<img src="http://wx.qlogo.cn/mmopen/LJ3zJxRhefm29tl3Lzv8Vgee4IR68yOWDx2HDx9MVh2yoOD5dFMzChYg2AEfyzyC0VFVialYTw3XQA16icKqsKFCOfKedmhcL4/0" class="mp-avart"//>
+					<p class="mp-name">云淡风清</p>
+				</li>
+				<li>
+					<img src="http://wx.qlogo.cn/mmopen/LJ3zJxRhefkzMDPibmxkjDYk47ovvQuvFpCHeeqeGUdswDNsOkygGZicGRh6lB2dD7XRdt0GZQp94T14eaISnGzfCunib9X7sdJ/0" alt="" class="mp-avart"/>
+					<p class="mp-name">joy</p>
+				</li>
+				<li>
+					<img src="http://wx.qlogo.cn/mmopen/zTnQsO5dDXd9Z12fyMWabgtpF6kibgF9MicLibZMoPnQVsEIeZQzqd0OLcxluNqV07QdJqKzVSGPcVWcttMBicDcIgTuBia3cZ9um/0" alt="" class="mp-avart"/>
+					<p class="mp-name">Iverson</p>
+				</li>
+				<li>
+					<img src="http://wx.qlogo.cn/mmopen/Q3auHgzwzM7QL2oHQZVqIZX2ohBt0E1ChKrqRjic2sibqeW3zPSAgSqPrbBGAvdOZMEdJQWhicsau1mfXy1flEHms6NVKXxW3t3EYromqmwsEo/0" alt="" class="mp-avart"/>
+					<p class="mp-name">Elva</p>
+				</li>
+				<li>
+					<img src="http://wx.qlogo.cn/mmopen/Qsnbg6w1EXskpdAwe8hAv3icwug7vfaX5BkHAF6rI0zOBDQ8LvFGgtpH6KqeKGjEicMW77sMHQ4qo7WMzM2mWTdMZnx2xicBjQP/0" alt="" class="mp-avart"/>
+					<p class="mp-name">新心</p>
+				</li>
+				
+			</ul>
+		</div>
+		
+		<!-- 底部 -->
+		<div class="footer-box">
+			<p>如有疑问电话：010-53393376</p>
+			<p>所含数据由易赞提供yeezan.com</p>
+		</div>
+		
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="build/main.js"></script>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?5bbe48e38a7000c72918e4a50805dc77";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+		</script>
+	</body>
+</html>

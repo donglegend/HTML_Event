@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta id="viewport" name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="grey" />
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<title>易赞红包</title>
+</head>
+<body>
+	<div class="box stage" id="stage">
+			<!-- code 有显示 floor3 无 显示 floor4-->
+			<div class="floor3 page">				
+				<div class="middle">
+					<img src="images/d_codetitle.png" class="title">
+					<div class="textCode">
+						<h2>提取码: <span>55qw</span></h2>
+						<p>凭提取码，登陆易赞PC端提取现金</p>
+					</div>
+
+					<div class="footer">
+						<a href="javascript:;"><b>www.yeezan.com</b></a>
+						<p>易赞，只为精准买单</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="floor4 page"></div>
+
+	</div>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="../lib/zepto.min.js"></script>
+<script type="text/javascript" src="../lib/linkshare.js"></script>
+<script type="text/javascript">
+	var config = {
+		title: "易赞新用户专享红包",
+		desc: "易赞新用户专享红包",
+		link: "http://hd.yeezan.com/yz_hongbao/get_hongbao.php",
+		imgUrl: "http://hd.yeezan.com/yz_hongbao/images/share2.jpg"
+	}
+
+	var Share = new WxShare(config);
+	Share.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+{
+  "error": 0,
+  "msg": "success",
+  "data": {
+    "total_article": "2,436",
+    "total_readnum": "14,024,504",
+    "total_collect": "7,914",
+    "total_share": "438,057",
+    "read_type": 1,
+    "person": "92.69",
+    "publish_date": "2016-02-25",
+    "title": "一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十六七八九十",
+    "readnum": "47,114",
+    "share": "3,021",
+    "fans_increase_month": 8,
+    "fans_beyond_percent": 12,
+    "fans_increase_list": [
+      3999,
+      3648,
+      3803,
+      298,
+      -1986,
+      -3220,
+      -2558,
+      -2377,
+      -1710,
+      -1850,
+      -1664,
+      -1558
+    ],
+    "fans_province_distribution": [
+      {
+        "province": "广东",
+        "percent": 9.92
+      },
+      {
+        "province": "江苏",
+        "percent": 7.12
+      },
+      {
+        "province": "山东",
+        "percent": 6.54
+      },
+      {
+        "province": "河南",
+        "percent": 5.78
+      },
+      {
+        "province": "浙江",
+        "percent": 5.26
+      },
+      {
+        "province": "四川",
+        "percent": 4.55
+      },
+      {
+        "province": "湖南",
+        "percent": 4.41
+      },
+      {
+        "province": "河北",
+        "percent": 4.31
+      },
+      {
+        "province": "湖北",
+        "percent": 3.56
+      },
+      {
+        "province": "安徽",
+        "percent": 3.38
+      },
+      {
+        "province": "北京",
+        "percent": 3.33
+      },
+      {
+        "province": "陕西",
+        "percent": 3.31
+      },
+      {
+        "province": "山西",
+        "percent": 3.16
+      },
+      {
+        "province": "辽宁",
+        "percent": 3.1
+      },
+      {
+        "province": "云南",
+        "percent": 3.03
+      },
+      {
+        "province": "福建",
+        "percent": 2.93
+      },
+      {
+        "province": "黑龙江",
+        "percent": 2.81
+      },
+      {
+        "province": "江西",
+        "percent": 2.45
+      },
+      {
+        "province": "上海",
+        "percent": 2.44
+      },
+      {
+        "province": "甘肃",
+        "percent": 2.16
+      },
+      {
+        "province": "贵州",
+        "percent": 2.13
+      },
+      {
+        "province": "吉林",
+        "percent": 2
+      },
+      {
+        "province": "广西",
+        "percent": 1.85
+      },
+      {
+        "province": "重庆",
+        "percent": 1.75
+      },
+      {
+        "province": "内蒙古",
+        "percent": 1.68
+      },
+      {
+        "province": "新疆",
+        "percent": 1.41
+      },
+      {
+        "province": "天津",
+        "percent": 1.05
+      },
+      {
+        "province": "宁夏",
+        "percent": 0.82
+      },
+      {
+        "province": "海南",
+        "percent": 0.57
+      },
+      {
+        "province": "青海",
+        "percent": 0.37
+      },
+      {
+        "province": "香港",
+        "percent": 0.35
+      },
+      {
+        "province": "澳门",
+        "percent": 0.21
+      },
+      {
+        "province": "西藏",
+        "percent": 0.19
+      },
+      {
+        "province": "台湾",
+        "percent": 0.13
+      }
+    ]
+  },
+  "code": 1
+}

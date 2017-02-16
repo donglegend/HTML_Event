@@ -1,0 +1,248 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, figcaption, figure, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0; }
+
+body, button, input, select, textarea {
+  font: 12px/1 Lucida Grande,'Microsoft YaHei',"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; }
+
+address, cite, dfn, em, var {
+  font-style: normal; }
+
+code, kbd, pre, samp, tt {
+  font-family: "Courier New",Courier,monospace; }
+
+small {
+  font-size: 12px; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+abbr[title], acronym[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+q:before, q:after {
+  content: ''; }
+
+legend {
+  color: #000; }
+
+fieldset, img {
+  border: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  border: 0;
+  height: 1px; }
+
+* {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-tap-highlight-color: transparent; }
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "\0020";
+  line-height: 0; }
+
+.clearfix:after {
+  clear: both; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+@font-face {
+  font-family: 'happy';
+  src: url("font/happy.woff") format("woff"), url("font/happy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+html, body {
+  position: relative;
+  max-width: 720px;
+  height: 100%;
+  margin: 0 auto;
+  font-family: "happy";
+  background: #35677a; }
+
+.box {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 2%; }
+  .box .boximg {
+    width: 100%; }
+  .box .border-img-box {
+    font-family: "微软雅黑";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: 15px solid transparent;
+    width: 60%;
+    padding: 10px;
+    -webkit-border-image: url(../images/border-img.png) 30 30 stretch;
+         -o-border-image: url(../images/border-img.png) 30 30 stretch;
+            border-image: url(../images/border-img.png) 30 30 stretch;
+    min-height: 100px;
+    color: #5f7da9;
+    line-height: 20px;
+    font-size: 14px; }
+    .box .border-img-box .l-font {
+      font-size: 18px; }
+    .box .border-img-box .s-font {
+      position: relative;
+      box-sizing: border-box;
+      padding-left: 10px; }
+      .box .border-img-box .s-font:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 5px;
+        height: 5px;
+        background: #5f7da9;
+        border-radius: 50%; }
+  .box .input-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: 15px solid transparent;
+    width: 60%;
+    padding: 0px 10px;
+    -webkit-border-image: url(../images/border-img.png) 30 30 stretch;
+         -o-border-image: url(../images/border-img.png) 30 30 stretch;
+            border-image: url(../images/border-img.png) 30 30 stretch;
+    min-height: 100px;
+    color: #5f7da9;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center; }
+    .box .input-box .mb {
+      margin-bottom: 5px; }
+    .box .input-box .input-son-box {
+      margin-bottom: 5px; }
+      .box .input-box .input-son-box .left {
+        float: left;
+        width: 25%; }
+      .box .input-box .input-son-box input, .box .input-box .input-son-box textarea {
+        box-sizing: border-box;
+        display: block;
+        float: left;
+        padding: 2px 5px;
+        width: 70%;
+        outline: none;
+        border: 1px solid #5f7da9;
+        background: #ebeaec;
+        border-radius: 5px;
+        color: #5f7da9; }
+      .box .input-box .input-son-box textarea {
+        resize: none; }
+      .box .input-box .input-son-box .warn {
+        border: 1px solid #df4c12; }
+    .box .input-box .btn {
+      width: 50%;
+      margin: 0 auto;
+      background: url(../images/btn.png) no-repeat center;
+      background-size: 100%;
+      color: #fff;
+      line-height: 30px; }
+    .box .input-box .tip {
+      font-family: "微软雅黑";
+      font-size: 12px; }
+  .box .no-visite {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 70%; }
+  .box .no-data {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 70%; }
+    .box .no-data img {
+      width: 100%; }
+    .box .no-data .btn {
+      position: absolute;
+      left: 50%;
+      top: 62%;
+      padding: 10px 5px;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      color: #fff; }
+    .box .no-data .get-gift {
+      font-family: "happy";
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      top: 65%;
+      background: url(../images/btn.png) no-repeat center;
+      background-size: 100%;
+      padding: 10px 0;
+      width: 50%;
+      text-align: center;
+      font-size: 14px;
+      color: #fff; }
+
+.bottom-box {
+  font-family: "微软雅黑";
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 20px;
+  color: #fff; }
+  .bottom-box .t {
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .bottom-box ul {
+    width: 100%; }
+    .bottom-box ul li {
+      float: left;
+      width: 33.333333%;
+      margin-bottom: 15px; }
+      .bottom-box ul li .mp-avart {
+        display: block;
+        width: 65%;
+        margin: 0 auto;
+        border-radius: 15px; }
+      .bottom-box ul li .mp-name {
+        box-sizing: border-box;
+        padding: 10px 5px 0;
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+
+.footer-box {
+  padding: 30px 0 20px;
+  font-family: "微软雅黑";
+  color: #fff;
+  font-size: 12px;
+  text-align: center; }
+  .footer-box p {
+    padding-top: 5px; }

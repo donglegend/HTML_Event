@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--#include file="commonDom/meta.html" -->
+	<title>让爱易读</title>
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	<!-- 背景音乐 -->
+	<audio id="bgSound" src="images/bgSound.mp3"></audio>
+	<audio id="bgS" src="images/bg.mp3" loop></audio>
+	<audio id="lightS" src="images/lightS.wav"></audio>
+	<div class="bgSoundImg" id="bgSoundImg"></div>
+	
+	<!-- clock loading -->
+	<div class="clock-box">
+		<img src="images/clock.png" alt="" />
+		<div class="circular-box">
+			<div class="hour-hand"></div>
+			<div class="minute-hand"></div>
+		</div>
+		<p class="process" id="loadProcess"></p>
+
+	</div>
+	
+	<!--内容开始-->
+	
+
+	<!-- 俯视桌面 -->
+	<div class="part3" style="opacity: 0">
+		<!-- 背景图 -->
+		<img src="images/table.png" alt="" class="table"/>
+		
+		<!--底部-->
+		<div class="footer-tip">所含数据由易赞提供yeezan.com </div>
+		
+		<!-- 漂浮 -->
+		<div class="float-box" style="opacity:0	">
+			<ul class="font-float clearfix">
+				<!-- <span class="list">佳音呐：赞赏8.8元</span> -->
+			</ul>
+			
+		</div>
+		
+		<!-- 手势 -->
+			<img src="images/icon-filp.png" alt="" class="icon-filp filp-animate"/>
+		<!-- 打开书后内容 -->
+		<div class="book">
+			<span class="prePage">上一页</span>
+			<!-- 十点读书文字 -->
+			<div class="tag-box page1">
+				<img src="images/page1.png" alt="" />
+			</div>
+			
+			<!-- 十点读书数据树形图 -->
+			<div class="tag-box fans-data">
+				
+				<img src="images/logo-shidian.png" alt="" class="logo-shidian"/>
+				<img src="images/fans-lines.png" class="fans-lines op"/>
+				<div class="timeAnim-box" style="display:none ;">
+					<div class="timeAnim">
+						<p class="t t1 op">2012.11.26</p>
+						<div class="p p1 op">
+							<p>我们发了</p>
+							<p>第一篇文章</p>
+						</div>
+					</div>
+					<div class="timeAnim">
+						<p class="t t2 op">2014.01.03</p>
+						<div class="p p2 op">
+							<p>10万用户</p>
+						</div>
+					</div>
+					<div class="timeAnim">
+						<p class="t t3 op">2014.07.22</p>
+						<div class="p p3 op">
+							<p>10w阅读量</p>
+						</div>
+					</div>
+					<div class="timeAnim">
+						<p class="t t4 op">2014.12.04</p>
+						<div class="p p4 op">
+							<p>100w用户</p>
+						</div>
+					</div>
+					<div class="timeAnim">
+						<p class="t t5 op">2016.03.04</p>
+						<div class="p p5 op">
+							<p>500w用户</p>
+						</div>
+					</div>
+					<div class="timeAnim">
+						<p class="t t6 op">2016.08.04</p>
+						<div class="p p6 op">
+							<p>我们有了</p>
+							<p>第900万个关注者</p>
+						</div>
+					</div>
+					<div class="timeAnim bottomT">
+						<p class="p7 op">如今，我们即将</p>
+						<p class="p8 op">迎来第1000万个用户</p>
+					</div>	
+				</div>	
+			</div>
+			
+			<div class="tag-box ten-font ten-font1">
+				<div class="timeAnim-box" style="display: none;">
+					<div class="timeAnim margin-b">
+						<p>再过些时候</p>
+						<p>我将迎来第<span class="mid-blue">1000万</span>个读者</p>
+					</div>
+					<div class="timeAnim margin-b">
+						<p>我一直想为我们每晚的“十点相遇”</p>
+						<p>做点什么有意义的事情</p>
+					</div>
+					<div class="timeAnim">
+						<p>不喜欢仪式性的庆祝形式</p>
+						<p>只希望我可以因为阅读去帮助更多的人</p>
+					</div>
+					
+					
+				</div>
+			</div>
+			
+			<!-- 十点读书号召文字 -->
+			<div class="tag-box ten-font boyGirl">
+				<div class="timeAnim-box" style="display: none;">
+					<div class="timeAnim margin-b">
+						<p>十点君决定和好友易赞发起这项活动：</p>
+					</div>
+					<div class="timeAnim margin-b">
+						<p class="mid-blue">活动一：你点支持，十点君<span class="l-font"><span class="orang">替</span>你捐款</span></p>
+						<p class="mid-blue">活动二：十点读书破“千万用户日期”<span class="l-font">慈善竞猜</span></p>
+						<p>十点君的捐款、你的竞猜金额将全部捐入读书基金</p>
+					</div>
+					<div class="timeAnim">
+						<p>让山里的孩子拥有梦寐以求的课本和文具</p>
+						<p>那么你愿意和十点君、易赞，还有千万读者共同让爱易读么？</p>
+					</div>
+				</div>
+				<img src="images/btn-love.png" alt="" class="btn-love"/>
+			</div>
+			
+			<!-- 支持 -->
+			<div class="tag-box support" data-move="n">
+				<img src="images/tag1.png" alt="" class="active-tip"/>
+				<div class="status">我愿支持让爱易读</div><!-- 支持后文案变为：已支持 -->
+				<p class="sb">你支持 我捐款</p>
+				<img src="images/heart.png" alt="" class="heart"/>
+				<div class="footer clearfix" id="footer">
+					<p>十点读书和易赞将<span class="orang">替</span>你为小朋友捐出这份易读基金。</p>
+					<p>感谢，您是第<span id="giftNum"></span>位支持者</p>
+				</div>
+				<!-- 支持金额-->
+				<span class="money" id="supportMoney">点我<br/>支持</span>
+				<!-- 心️ -->
+				<div class="heart-box">
+					<img src="images/icon-heart.png" alt="" class="icon-heart1"/>
+					<img src="images/icon-heart.png" alt="" class="icon-heart2"/>
+					<img src="images/icon-heart.png" alt="" class="icon-heart3"/>
+					<img src="images/icon-heart.png" alt="" class="icon-heart4"/>
+					<img src="images/icon-heart.png" alt="" class="icon-heart5"/>
+					<img src="images/icon-heart.png" alt="" class="icon-heart6"/>
+				</div>
+			</div>
+			<!-- 日历／时间 -->
+			<div class="tag-box time-box" data-move="n"> 
+				<img src="images/tag2.png" class="active-tip"/>
+				<img src="images/data-font.png" alt="" class="data-font"/>
+				<img src="images/rule.png" class="rule"/>
+				<div class="chioce">
+					<div class="calendar-box">
+						<div class="calendar" id="calendar"></div><!-- 日历容器 -->
+						<P class="act">
+					        <button id="prevMonth">上一月</button>
+					        <button id="nextMonth">下一月</button>
+					    </P>
+					</div>
+					
+					<div class="hour-box">
+						<div class="hour-time">
+							<div class="hour">
+								<ul id="hour"></ul>
+							</div>
+							<span class="add" id="prev">+</span>
+							<span class="del" id="next">-</span>
+						</div>
+						<div class="space">
+							<span class="hour">至</span>
+						</div>
+						<div class="hour-time">
+							<div class="hour">
+								<ul id="hourOther"></ul>
+							</div>
+							<span class="add"></span>
+							<span class="del"></span>
+						</div>
+						<img src="images/btn-sure.png" alt="" class="btn-sure" id="btn-sure"/>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 2次登录赞赏后的显示 -->
+			<div class="tag-box second-login-gift" style="display: none;">
+				<img src="images/second-login-gift.png" alt="" />
+				<p class="second-font">感谢您发自内心的善举和机智的竞猜。您智慧灵光的闪现，第六灵感的迸发促使您选择了 (<span id="timeSec"></span>）这一特别的时刻将会是十点破千万粉丝之时。让我们一起持续关注！</p>
+			</div>
+			
+			<!-- 图表 -->
+			<div class="tag-box chart" data-move="n"> 
+				<img src="images/fans-title.png" alt="" class="fans-title"/>
+				<span class="wan">单位／万</span>
+				<div class="chart-box" id="main">
+					
+				</div>
+				<a href="http://event.yeezan.com/p_ten/process.html"><img src="images/btn-next.png" alt="" class="chart-btn"/></a>
+			</div>
+			
+			
+		</div>
+
+		<!-- 合起来的书 -->
+		<div class="book-closed"></div>
+	</div>
+	
+
+	<!-- 点击开灯 -->
+	<div class="part2 hide">
+		<!-- 开灯后 -->
+		<img src="images/light-screen.png" alt="" class="light-screen"/>	
+		<img src="images/jiantou.png" class="jiantou"/>
+		<!-- 开灯前 -->
+		<div class="switch">
+			<img src="images/light.png" alt="" class="light"/>
+			<img src="images/light-bling.png" class="light-bling"/>
+		</div>
+	</div>
+
+	<!-- 二次登录通知 -->
+	<div class="part5" style="display: none;">
+		<div class="notice">
+			<img src="images/notice.png" alt="" />
+			<div class="btn-continu"></div>
+			<div class="btn-go"></div>
+		</div>
+	</div>
+	
+	<!-- 红包 -->
+	<div class="red-box" style="display:none;">
+		<span class="closed" id="closed">关闭</span>
+		<div class="red">
+			<div class="resertMonet clearfix" id="resertMonet">
+				<img src="images/resert.png" alt="" class="resertImg"/>
+				<span class="resertFont">金额刷新</span>
+			</div>
+			<div class="money">
+				<ul id="RedMoney">
+				</ul>
+				<!-- <span class="money-num" id="money-num"></span> -->
+				<span class="yuan">元</span>
+			</div>
+			<p class="art" id="art">换掉磨手的铅笔头</p>
+			<div class="btn-red" id="btn-red">确定</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="build/main.js"></script>
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?5bbe48e38a7000c72918e4a50805dc77";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+</body>
+</html>

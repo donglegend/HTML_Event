@@ -1,0 +1,15 @@
+{
+    "error": 0,
+    "msg": "success",
+    "data": {
+        "js_param": {
+            "appId": "wx63820e17a1737064",
+            "nonceStr": "lu8mzxomgvye6thctvi3cr8xxfnmc7bp",
+            "package": "prepay_id=wx20160810135824a50f92694a0536522007",
+            "signType": "MD5",
+            "timeStamp": "1470808704",
+            "paySign": "4CAB840B89231C2DC0F99A7367CD270A"
+        }
+    },
+    "code": 1
+}

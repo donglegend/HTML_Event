@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'happy';
+    src: url('font/happy.woff') format('woff'),
+         url('font/happy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body{
+	font-family: "happy";
+} 
